@@ -1,0 +1,171 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+    font-family: avenir next,avenir,sans-serif !important;
+    font-size: 1.8em;
+    line-height: 1.8;
+}
+
+.header, .credits {
+  background-color: #50177C;
+  color: #fff;
+}
+
+.navbar {
+  display: none;
+}
+
+.button {
+  border-radius: 100px;
+  height: 70px !important;
+  min-width:200px;
+  line-height: 70px !important;
+  font-size:100% !important;
+}
+
+.button:hover {
+  transition: background-color .25s ease-in;
+  background-color: #0fa0ce !important;
+}
+
+.button.download, .button.download:focus {
+  background-color: #0d8e23;
+  border-color: #063c0f;
+}
+
+.button.learn, .button.learn:focus, 
+.button.featurelist, .button.featurelist:focus {
+  background-color: #00449e;
+  border-color: #0b3163;
+}
+
+.button.donate, .button.donate:focus {
+  background-color: #ffc439;
+  border-color: #dc9616;
+}
+
+.button.featurelist, .button.featurelist:focus {
+  display:inline-table;
+  white-space:initial;
+}
+
+
+/* Align
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.justify {
+  text-align:justify;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  /*padding: 8rem 0 7rem;*/
+  padding: 2rem 0 1rem;
+  text-align: center;
+  border-top: #50177C 5px solid;
+}
+
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+/* images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media
+ * ****************
+ * 
+ * 
+ * 
+ * Bigger than 550
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 550px) {
+  .section {
+    /*padding: 2rem 0 1rem;*/
+  }
+  
+}
+
+/* Bigger than 750 
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (min-width: 750px) {
+
+  .section {
+    /*padding: 4rem 0 2rem;*/
+  }
+
+   /* Navbar */
+  .navbar-flex {
+	display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-flex-center {
+	margin: 0 auto;
+  }
+  .navbar-flex-items-center {
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }  
+  /*.navbar-flex-justify-between {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }*/
+  .navbar {
+    border-top-width: 0; 
+    padding: 0 2rem;
+    }
+  .navbar {
+    display: block;
+    height: 6.5rem;
+    z-index: 99;
+    
+ }
+  .navbar > .container {
+    width: 100%; }
+  .navbar-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: 1rem;
+   }
+  .navbar-item {
+    position: relative;
+    float: left;
+    margin-bottom: 0; }
+  .navbar-link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    /*line-height: 4.5rem;*/
+    padding: 0 0.5rem;
+    color: #FFFFFF;
+   }
+
+  .navbar-link.active {
+    color: #FFFFFF; }
+  .has-docked-nav .navbar {
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .has-docked-nav .navbar-spacer {
+    display: block; }
+  /* Re-overiding the width 100% declaration to match size of % based container */
+  .has-docked-nav .navbar > .container {
+    width: 80%; }
+}
+
+
+/* Bigger than 1000 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */ 
+@media (min-width: 1000px) {
+   .section {
+    /*padding: 8rem 0 7rem;*/
+  }
+  
+}  
+
